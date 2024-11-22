@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume-0</title>
+    <title>firstname-lastname-resume</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .font-primary {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .font-secondary {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        li::marker {
+            font-size: 10pt;
+            color: #0ea5e9;
+        }
+    </style>
 </head>
-<body>
-    <p>Resume Template 0</p>
+<body class="flex flex-col items-center text-[8pt] font-secondary">
+    <article class="max-w-[596pt] mx-[36pt] my-[24pt]">
+        <header class="flex flex-col items-center">
+            <h1 class="text-[24pt] font-semibold uppercase">firstname lastname</h1>
+            <ul class="flex items-center">
+                <li class="flex items-center mr-[8pt]">
+                    <i class="fas fa-envelope text-sky-500"></i>
+                    <a href="" class="ml-[4pt]">username@domain.com</a>
+                </li>
+                <li class="flex items-center mr-[8pt]">
+                    <i class="fas fa-phone-alt text-sky-500"></i>
+                    <span class="ml-[4pt]">+91 9876543210</span>
+                </li>
+                <li class="flex items-center mr-[8pt]">
+                    <i class="fab fa-github text-sky-500"></i>
+                    <a href="" target="_blank" class="ml-[4pt]">githubUsername</a>
+                </li>
+                <li class="flex items-center mr-[8pt]">
+                    <i class="fas fa-map-marker-alt text-sky-500"></i>
+                    <span class="ml-[4pt]">Location</span>
+                </li>
+            </ul>
+        </header>
+        <main class="mt-[24pt]">
+            <!-- Objective -->
+            <section class="font-secondary text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </section>
+
+            <!-- Experience -->
+            <section class="mt-[16pt] font-secondary">
+                <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Experience</h2>
+            </section>
+
+            <!-- Skills -->
+            <section class="mt-[16pt] font-secondary">
+                <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Skills</h2>
+                <ul class="list-disc list-inside">
+                    <li class="pl-[4pt]">
+                        skill-0
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-1
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-2
+                    </li>
+                    <li class="pl-[4pt]">
+                        skill-3
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-4
+                    </li>
+                    <li class="pl-[4pt]">
+                        skill-5
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-6
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-7
+                    </li>
+                    <li class="pl-[4pt]">
+                        skill-8
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-9
+                    </li>
+                    <li class="pl-[4pt]">
+                        skill-10
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-11
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-12
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-13
+                        <span class="mx-[4pt] text-sky-500">|</span>
+                        skill-14
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Education -->
+            <section class="mt-[16pt] font-secondary">
+                <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Education</h2>
+            </section>
+
+            <!-- Certifications -->
+            <section class="mt-[16pt] font-secondary">
+                <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Certifications</h2>
+            </section>
+
+            <!-- Languages -->
+            <section class="mt-[16pt] font-secondary">
+                <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Languages</h2>
+                <ul class="list-disc list-inside">
+                    <li class="pl-[4pt]">Language 1</li>
+                    <li class="pl-[4pt]">Language 2</li>
+                    <li class="pl-[4pt]">Language 3</li>
+                </ul>
+            </section>
+        </main>
+    </article>
 </body>
 </html>
