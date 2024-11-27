@@ -36,12 +36,21 @@
             font-size: 11pt;
             color: #0ea5e9;
         }
+
+        #experience ul li::marker {
+            font-size: 9pt;
+            color: #9ca3af;
+        }
+
+        .page-break {
+            break-after: page;
+        }
     </style>
 </head>
 <body class="flex flex-col items-center text-[8pt] font-secondary">
     <article class="max-w-[596pt] mx-[36pt] my-[24pt]">
         <header class="flex flex-col items-center">
-            <h1 class="text-[24pt] font-semibold uppercase">firstname lastname</h1>
+            <h1 class="text-[24pt] font-bold uppercase">firstname lastname</h1>
             <ul class="flex items-center">
                 <li class="flex items-center mr-[8pt]">
                     <i class="fas fa-envelope text-sky-500"></i>
@@ -68,15 +77,15 @@
             </section>
 
             <!-- Experience -->
-            <section class="mt-[16pt] font-secondary">
+            <section id="experience" class="mt-[16pt] font-secondary">
                 <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Experience</h2>
-                <section class="pl-[0pt]">
+                <section class="pt-[4pt]">
                     <!-- company details -->
                     <section class="pt-[4pt] pb-[2pt] flex items-center justify-start">
                         <div class="w-[16pt] h-[16pt] pb-[2pt] flex items-center justify-center">
                             <i class="fas fa-building text-[12pt] text-sky-500"></i>
                         </div>
-                        <h3 class="ml-[8pt]">Company name, company location.</h3>
+                        <h3 class="ml-[8pt] font-semibold">Company name, company location.</h3>
                     </section>
                     <!-- position 1 -->
                     <section>
@@ -85,40 +94,74 @@
                             <div class="w-[16pt] h-[16pt] flex items-center justify-center">
                                 <i class="fas fa-circle text-[6pt] text-gray-400"></i>
                             </div>
-                            <p class="ml-[8pt]">Position, MMM YYYY - Current</p>
+                            <p class="ml-[8pt] font-medium italic">Position, MMM YYYY - Current</p>
                         </div>
                         <div class="flex justify-start">
-                            <div class="w-[26pt] flex justify-center">
+                            <div class="w-[17pt] flex justify-center">
                                 <div class="w-[1pt] border-l border-[1pt] border-gray-200"></div>
                             </div>
                             <!-- projects container -->
-                            <div class="ml-[8pt]">
+                            <div class="w-full ml-[8pt]">
                                 <!-- project 1 -->
                                 <div>
                                     <!-- project title -->
                                     <div class="flex items-center justify-start">
-                                        <div class="flex items-center justify-center">
+                                        <div class="w-[18pt] h-[14pt] pl-[1pt] flex items-center justify-center">
                                             <i class="fas fa-code text-sky-500"></i>
                                         </div>
-                                        <p class="ml-[8pt]">Project Title</p>
+                                        <p class="w-full pt-[1pt] ml-[6pt] font-light font-primary">Project Title</p>
                                     </div>
                                     <!-- project details -->
-                                    <div class="border-0 ml-[18pt]">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    <div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- project 2 -->
                                 <div class="mt-[6pt]">
                                     <!-- project title -->
                                     <div class="flex items-center justify-start">
-                                        <div class="flex items-center justify-center">
+                                        <div class="w-[18pt] h-[14pt] pl-[1pt] flex items-center justify-center">
                                             <i class="fas fa-code text-sky-500"></i>
                                         </div>
-                                        <p class="ml-[8pt]">Project Title</p>
+                                        <p class="w-full pt-[1pt] ml-[6pt] font-light font-primary">Project Title</p>
                                     </div>
                                     <!-- project details -->
-                                    <div class="border-0 ml-[18pt]">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    <div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -131,40 +174,74 @@
                             <div class="w-[16pt] h-[16pt] flex items-center justify-center">
                                 <i class="fas fa-circle text-[6pt] text-gray-400"></i>
                             </div>
-                            <p class="ml-[8pt]">Position, MMM YYYY - MMM YYYY</p>
+                            <p class="ml-[8pt] font-medium italic">Position, MMM YYYY - MMM YYYY</p>
                         </div>
                         <div class="flex justify-start">
-                            <div class="w-[26pt] flex justify-center">
+                            <div class="w-[17pt] flex justify-center">
                                 <div class="w-[1pt] border-l border-[1pt] border-gray-200"></div>
                             </div>
                             <!-- projects container -->
-                            <div class="ml-[8pt]">
+                            <div class="w-full ml-[8pt]">
                                 <!-- project 1 -->
                                 <div>
                                     <!-- project title -->
                                     <div class="flex items-center justify-start">
-                                        <div class="flex items-center justify-center">
+                                        <div class="w-[18pt] h-[14pt] pl-[1pt] flex items-center justify-center">
                                             <i class="fas fa-code text-sky-500"></i>
                                         </div>
-                                        <p class="ml-[8pt]">Project Title</p>
+                                        <p class="w-full pt-[1pt] ml-[6pt] font-light font-primary">Project Title</p>
                                     </div>
                                     <!-- project details -->
-                                    <div class="border-0 ml-[18pt]">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    <div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- project 2 -->
                                 <div class="mt-[6pt]">
                                     <!-- project title -->
                                     <div class="flex items-center justify-start">
-                                        <div class="flex items-center justify-center">
+                                        <div class="w-[18pt] h-[14pt] pl-[1pt] flex items-center justify-center">
                                             <i class="fas fa-code text-sky-500"></i>
                                         </div>
-                                        <p class="ml-[8pt]">Project Title</p>
+                                        <p class="w-full pt-[1pt] ml-[6pt] font-light font-primary">Project Title</p>
                                     </div>
                                     <!-- project details -->
-                                    <div class="border-0 ml-[18pt]">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    <div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="flex items-start justify-start">
+                                            <div class="w-[18pt] h-[14pt] flex items-center justify-center">
+                                                <i class="fas fa-circle text-[3pt] text-gray-400"></i>
+                                            </div>
+                                            <p class="w-full pt-[1pt] ml-[6pt] flex items-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -223,8 +300,8 @@
                         <i class="fas fa-university text-[10pt] text-sky-500"></i>
                     </div>
                     <div class="pl-[8pt]">
-                        <h3 class="h-[16pt] pt-[2pt] flex items-center">University name, location.</h3>
-                        <p class="">Degree</p>
+                        <h3 class="h-[16pt] pt-[2pt] flex items-center font-semibold">University name, location.</h3>
+                        <p class="italic">Degree</p>
                     </div>
                 </section>
                 <section class="py-[2pt] flex items-start justify-start">
@@ -232,8 +309,8 @@
                         <i class="fas fa-university text-[10pt] text-sky-500"></i>
                     </div>
                     <div class="pl-[8pt]">
-                        <h3 class="h-[16pt] pt-[2pt] flex items-center">University name, location.</h3>
-                        <p class="">Degree</p>
+                        <h3 class="h-[16pt] pt-[2pt] flex items-center font-semibold">University name, location.</h3>
+                        <p class="italic">Degree</p>
                     </div>
                 </section>
                 <section class="pt-[4pt] flex items-start justify-start">
@@ -241,8 +318,8 @@
                         <i class="fas fa-university text-[10pt] text-sky-500"></i>
                     </div>
                     <div class="pl-[8pt]">
-                        <h3 class="h-[16pt] pt-[2pt] flex items-center">University name, location.</h3>
-                        <p class="">Degree</p>
+                        <h3 class="h-[16pt] pt-[2pt] flex items-center font-semibold">University name, location.</h3>
+                        <p class="italic">Degree</p>
                     </div>
                 </section>
             </section>
@@ -261,7 +338,7 @@
             <!-- Languages -->
             <section class="mt-[16pt] font-secondary">
                 <h2 class="px-[2pt] pt-[1pt] bg-sky-50 text-sky-500 font-semibold uppercase">Languages</h2>
-                <ul class="list-disc list-inside">
+                <ul class="pt-[4pt] list-disc list-inside">
                     <li class="pl-[6pt]">Language 1</li>
                     <li class="pl-[6pt]">Language 2</li>
                     <li class="pl-[6pt]">Language 3</li>
